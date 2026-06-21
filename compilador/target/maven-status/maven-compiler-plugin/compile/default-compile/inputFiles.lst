@@ -1,0 +1,8 @@
+D:\compilador-lexico-sintatico\compilador\src\main\java\compilador\lexer\Buffer.java
+D:\compilador-lexico-sintatico\compilador\src\main\java\compilador\lexer\Lexer.java
+D:\compilador-lexico-sintatico\compilador\src\main\java\compilador\lexer\Token.java
+D:\compilador-lexico-sintatico\compilador\src\main\java\compilador\lexer\TokenPattern.java
+D:\compilador-lexico-sintatico\compilador\src\main\java\compilador\lexer\TokenType.java
+D:\compilador-lexico-sintatico\compilador\src\main\java\compilador\Main.java
+D:\compilador-lexico-sintatico\compilador\src\main\java\compilador\parser\Parser.java
+D:\compilador-lexico-sintatico\compilador\src\main\java\compilador\parser\TokenBuffer.java
