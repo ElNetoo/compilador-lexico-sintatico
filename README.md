@@ -1,12 +1,12 @@
-# Compilador — Analisador Léxico e Sintático
+# 🔍 Compilador — Analisador Léxico e Sintático
 
 Implementação de um analisador léxico e sintático preditivo por descendência recursiva com Tradução Dirigida pela Sintaxe (TDS), capaz de converter expressões aritméticas da notação infixa para a notação prefixa.
 
-Projeto foi desenvolvido e implementado para a disciplina de Compiladores.
+> Projeto desenvolvido para a disciplina de Compiladores.
 
 ---
 
-## Objetivo
+## 🎯 Objetivo
 
 Receber expressões aritméticas escritas na **notação infixa** e convertê-las automaticamente para a **notação prefixa**, respeitando precedência e associatividade dos operadores.
 
@@ -22,6 +22,16 @@ Receber expressões aritméticas escritas na **notação infixa** e convertê-la
 | `2 + -5 * 3`          | `+ 2 * - 5 3`     |
 | `5 ^ -2`              | `^ 5 - 2`         |
 | `-(A + B)`            | `- + A B`         |
+
+---
+
+## Exemplos de Erro
+
+| Entrada            | Erro Reportado                                          |
+|--------------------|---------------------------------------------------------|
+| `A + @ B`          | `Erro léxico: caractere não reconhecido '@'`            |
+| `A + * B`          | `Erro sintático: token inesperado OP_MUL ('*')`         |
+| `(A + B`           | `Erro sintático: esperado FP mas encontrado EOF ('')`   |
 
 ---
 
@@ -54,7 +64,7 @@ F  → ( E ) | INT | REAL | ID
 
 ---
 
-## Estrutura do Projeto
+## 🗂️ Estrutura de pastas do projeto
 
 ```
 src/
@@ -75,25 +85,31 @@ src/
 
 ## Como rodar o projeto
 
+### Pré-requisitos
+- Java 17+
+- Maven
+
 ### Passo-a-passo
 
 ```bash
 
 git clone https://github.com/ElNetoo/compilador-lexico-sintatico.git
-cd compilador-lexico-sintatico
+cd compilador-lexico-sintatico/compilador
 
 mvn compile
 
-mvn exec:java -Dexec.mainClass="compilador.Main" -Dexec.args="teste.txt"
+mvn exec:java "-Dexec.args=teste.txt"
 ```
 
 ### Arquivo de entrada
 
-Crie um arquivo `teste.txt` com a expressão na notação infixa:
+Crie um arquivo `teste.txt` na raiz do projeto com a expressão na notação infixa:
 
 ```
 A + B * C
 ```
+
+> ⚠️ Tem que salvar o arquivo com encoding **UTF-8 sem BOM** para funcionar, pois pode acontecer de dar erro com codificação.
 
 ---
 
@@ -104,7 +120,7 @@ A + B * C
 
 ---
 
-## Autores
+## 👨‍💻 Autores
 
 | Nome | GitHub |
 |------|--------|
