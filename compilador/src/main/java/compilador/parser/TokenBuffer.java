@@ -9,12 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TokenBuffer {
-    private Lexer lexer;
     private List<Token> tokens;
     private int pos;
 
     public TokenBuffer(Lexer lexer) throws IOException {
-        this.lexer = lexer;
         this.tokens = new ArrayList<>();
         this.pos = 0;
 
