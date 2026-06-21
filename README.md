@@ -103,7 +103,7 @@ mvn exec:java "-Dexec.args=teste.txt"
 
 ### Arquivo de entrada
 
-Crie um arquivo `teste.txt` na raiz do projeto com a expressão na notação infixa:
+Crie um arquivo `testes.txt` na raiz do projeto com a expressão na notação infixa:
 
 ```
 A + B * C
