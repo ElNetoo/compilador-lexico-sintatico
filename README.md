@@ -79,7 +79,7 @@ src/
 
 ```bash
 
-git clone https://github.com/seu-usuario/compilador-lexico-sintatico.git
+git clone https://github.com/ElNetoo/compilador-lexico-sintatico.git
 cd compilador-lexico-sintatico
 
 mvn compile
